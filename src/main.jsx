@@ -5,7 +5,7 @@ const root = createRoot(document.getElementById("root"));
 // root.render("Hola Mundo");
 
 //funcion de crear un boton
-const crearBoton = ({ texto }) => {
+const Button = ({ texto }) => {
   return (
     <button>
       {" "}
@@ -30,8 +30,8 @@ const crearBoton = ({ texto }) => {
 
 root.render(
   <React.Fragment>
-    {crearBoton({ texto: "Hola Mundo" })}
-    {crearBoton({ texto: "Hola Mundo 2" })}
-    {crearBoton({ texto: "Hola Mundo 3" })}
+    <Button texto="Hola Mundo 1" />
+    <Button texto="Hola Mundo 2" />
+    <Button texto="Hola Mundo 3" />
   </React.Fragment>
 );
