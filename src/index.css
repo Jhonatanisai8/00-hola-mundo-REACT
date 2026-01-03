@@ -5,4 +5,5 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   display: grid;
   place-content: center;
+  min-height: 100vh;
 }
