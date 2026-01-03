@@ -1,4 +1,4 @@
-export function TwitterFollowCard({ children, userName, name, isFollowing }) {
+export function TwitterFollowCard({ children, userName = 'unknow', name, isFollowing }) {
   return (
     <article className="tw-followCard">
       <header className="tw-followCard-header">
