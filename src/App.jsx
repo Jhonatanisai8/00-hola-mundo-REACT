@@ -6,21 +6,19 @@ export function App() {
   // const formatteedUserName = (userName) => <span>@{userName}</span>;
   return (
     <section className="App">
-      <TwitterFollowCard
-        userName="midudev"
-        name="Midudev"
-        isFollowing={true}
-      />
+      <TwitterFollowCard userName="midudev" name="Midudev" isFollowing={true}>
+        Midudev
+      </TwitterFollowCard>
       <TwitterFollowCard
         userName="mouredev"
         name="Mouredev"
-        isFollowing={false}
-      />
-      <TwitterFollowCard
-        userName="jhonatan"
-        name="Jhonatan"
-        isFollowing={false}
-      />
+        isFollowing={false}>
+        Midudev
+      </TwitterFollowCard>
+      
+      <TwitterFollowCard userName="jhonatan" name="Jhonatan" isFollowing={false}>
+        Jhonatan
+      </TwitterFollowCard>
     </section>
   );
 }
