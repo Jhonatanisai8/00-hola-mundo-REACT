@@ -1,9 +1,4 @@
-export function TwitterFollowCard({
-  formatteedUserName,
-  userName,
-  name,
-  isFollowing,
-}) {
+export function TwitterFollowCard({ userName, name, isFollowing }) {
   return (
     <article className="tw-followCard">
       <header className="tw-followCard-header">
@@ -14,9 +9,7 @@ export function TwitterFollowCard({
         />
         <div className="tw-followCard-info">
           <strong>{name}</strong>
-          <span className="tw-followCard-info-username">
-            {formatteedUserName}
-          </span>
+          <span className="tw-followCard-info-username">@{userName}</span>
         </div>
       </header>
       <aside>
