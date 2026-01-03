@@ -6,9 +6,10 @@ export function App() {
   // const formatteedUserName = (userName) => <span>@{userName}</span>;
   return (
     <section className="App">
-      <TwitterFollowCard isFollowing={true}>Midudev</TwitterFollowCard>
-      <TwitterFollowCard userName="mouredev" isFollowing={false}>
-        Midudev
+      <TwitterFollowCard isFollowing={true}>Test</TwitterFollowCard>
+
+      <TwitterFollowCard userName="midudev" isFollowing={false}>
+        mouredev
       </TwitterFollowCard>
 
       <TwitterFollowCard userName="jhonatan" isFollowing={false}>
