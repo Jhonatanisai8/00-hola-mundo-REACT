@@ -17,9 +17,7 @@ export function TwitterFollowCard({
         </div>
       </header>
       <aside>
-        <button className="tw-followCard-button">
-          {isFollowing ? "Siguiendo" : "Seguir"}
-        </button>
+        <button className="tw-followCard-button">Seguir</button>
       </aside>
     </article>
   );
