@@ -6,6 +6,8 @@ export function App() {
   // const format = (userName) => `@${userName}`;
   // const formatteedUserName = (userName) => <span>@{userName}</span>;
   const [nombre, setNombre] = useState("eli");
+  console.log("Nombre Renderisado", nombre);
+
   return (
     <section className="App">
       <TwitterFollowCard isFollowing={true}>Test</TwitterFollowCard>

@@ -10,6 +10,7 @@ export function TwitterFollowCard({ children, userName = "unknow" }) {
   const handleClick = () => {
     setIsFollowing(!isFollowing);
   };
+  console.log("Nombre Renderisado tw", userName);
 
   return (
     <article className="tw-followCard">
