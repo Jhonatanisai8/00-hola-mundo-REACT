@@ -8,13 +8,9 @@ export function App() {
     <section className="App">
       <TwitterFollowCard isFollowing={true}>Test</TwitterFollowCard>
 
-      <TwitterFollowCard userName="midudev" isFollowing>
-        mouredev
-      </TwitterFollowCard>
+      <TwitterFollowCard userName="midudev">mouredev</TwitterFollowCard>
 
-      <TwitterFollowCard userName="jhonatan" isFollowing={false}>
-        Jhonatan
-      </TwitterFollowCard>
+      <TwitterFollowCard userName="jhonatan">Jhonatan</TwitterFollowCard>
     </section>
   );
 }
