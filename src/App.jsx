@@ -1,6 +1,29 @@
 import { useState } from "react";
 import "./App.css";
 import { TwitterFollowCard } from "./TwitterFollowCard";
+
+const usuarios = [
+  {
+    nombreUsuario: "jhonatan",
+    nombre: "Jhonatan Sami",
+    esSeguidor: true,
+  },
+  {
+    nombreUsuario: "danieldev",
+    nombre: "Daniel Sami",
+    esSeguidor: true,
+  },
+  {
+    nombreUsuario: "yumiSanz",
+    nombre: "Yumi Sanz",
+    esSeguidor: true,
+  },
+  {
+    nombreUsuario: "elisamu",
+    nombre: "Samuel Eli",
+    esSeguidor: true,
+  },
+];
 export function App() {
   // const addAt = (userName) => `@${userName}`;
   // const format = (userName) => `@${userName}`;
@@ -10,18 +33,17 @@ export function App() {
 
   return (
     <section className="App">
-      <TwitterFollowCard userName="midudev" initialIsFollowing={true}>
-        {" "}
-        Miguel Angel Durán
-      </TwitterFollowCard>
-      <TwitterFollowCard userName="jhonatan">Jhonatan Isai</TwitterFollowCard>
-      {/* <button
-        onClick={() => {
-          setNombre("Daniel");
-        }}
-      >
-        Cambiar de Nombre
-      </button> */}
+      {usuarios.map((usuario) => {
+        const { nombreUsuario, nombre, esSeguidor } = usuario;
+        return (
+          <TwitterFollowCard
+            userName={nombreUsuario}
+            initialIsFollowing={esSeguidor}
+          >
+            {nombre}
+          </TwitterFollowCard>
+        );
+      })}
     </section>
   );
 }
